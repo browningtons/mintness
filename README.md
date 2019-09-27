@@ -1,2 +1,2 @@
-# mintness
+# Mintness
 Grab Mint Transactions
