@@ -1,2 +1,2 @@
 # Mintness
-Grab Mint Transactions and paste the results into a google sheet
+Grab Mint.com transactions and paste the results into a google sheet
