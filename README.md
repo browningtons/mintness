@@ -1,2 +1,2 @@
 # Mintness
-Grab Mint Transactions
+Grab Mint Transactions and paste the results into a google sheet
