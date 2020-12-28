@@ -50,7 +50,7 @@ class mintbot:
         driver.get(url)
         time.sleep(random.randint(3, 4) + (random.randint(1, 2) / 10))
 
-transactions = mintbot("browningtons@gmail.com", "Elevado1986@")
+transactions = mintbot(USERNAME, PASSWORD)
 
 # Look for the file that was most recently downloaded
 
