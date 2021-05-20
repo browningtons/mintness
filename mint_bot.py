@@ -18,7 +18,7 @@ class mintbot:
     def __init__(self, username, password):
         self.browserProfile = webdriver.ChromeOptions()
         self.browserProfile.add_experimental_option('prefs', {'intl.accept_languages': 'en,en_US'})
-        self.driver = webdriver.Chrome(executable_path='/Users/paul.brown/Documents/Python/chromedriver')
+        self.driver = webdriver.Chrome(executable_path='xxxxxxx/chromedriver')
         self.username = username
         self.password = password
         self.login()
@@ -81,9 +81,9 @@ date_df = pd.DataFrame({'date':drange})
 df2 = date_df.merge(df, on='date', how='left')
 
 #once you have the final dataframe, now it is time to paste it into google sheets
-pycred = pygsheets.authorize(service_file='/Users/paul.brown/Documents/Python/credentials.json')
+pycred = pygsheets.authorize(service_file='xxxxxx_credentials.json')
 #opening the gsheet and sheet you want to work with
-ss = pycred.open_by_key('1-8Ua0dlazv-edC1a-2R9lgyMavUCZ_2NR4tUj28N4VQ')[0]
+ss = pycred.open_by_key('KEY')[0]
 #overwrite what is in the sheet with your df
 ss.set_dataframe(df2,(1,1))
 
